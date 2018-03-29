@@ -2,7 +2,7 @@
 按钮动画， 长按 以及 旋转动画 两种效果
 
 # 效果图片
-## ！[展示效果](https://github.com/EarthMass/AnimationButton/blob/master/%E6%8C%89%E9%92%AE%E5%8A%A8%E7%94%BB.gif)
+## ![展示效果](https://github.com/EarthMass/AnimationButton/blob/master/%E6%8C%89%E9%92%AE%E5%8A%A8%E7%94%BB.gif)
 
 # 使用
 # LongPressProgressView 继承自UIView 通过手势来实现 长按效果
