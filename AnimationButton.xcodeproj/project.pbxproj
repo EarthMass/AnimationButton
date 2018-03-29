@@ -13,6 +13,8 @@
 		1351C5D5206C8100006B1A11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1351C5D4206C8100006B1A11 /* Assets.xcassets */; };
 		1351C5D8206C8100006B1A11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1351C5D6206C8100006B1A11 /* LaunchScreen.storyboard */; };
 		1351C5DB206C8100006B1A11 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351C5DA206C8100006B1A11 /* main.m */; };
+		1351C5E4206C8146006B1A11 /* RoundAnimationButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351C5E2206C8145006B1A11 /* RoundAnimationButton.m */; };
+		1351C5E7206C817B006B1A11 /* LongPressProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1351C5E6206C817B006B1A11 /* LongPressProgressView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		1351C5D7206C8100006B1A11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1351C5D9206C8100006B1A11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1351C5DA206C8100006B1A11 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1351C5E2206C8145006B1A11 /* RoundAnimationButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RoundAnimationButton.m; sourceTree = "<group>"; };
+		1351C5E3206C8146006B1A11 /* RoundAnimationButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RoundAnimationButton.h; sourceTree = "<group>"; };
+		1351C5E5206C817B006B1A11 /* LongPressProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LongPressProgressView.h; sourceTree = "<group>"; };
+		1351C5E6206C817B006B1A11 /* LongPressProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LongPressProgressView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		1351C5CA206C8100006B1A11 /* AnimationButton */ = {
 			isa = PBXGroup;
 			children = (
+				1351C5E1206C8137006B1A11 /* LongPressButton */,
 				1351C5CB206C8100006B1A11 /* AppDelegate.h */,
 				1351C5CC206C8100006B1A11 /* AppDelegate.m */,
 				1351C5CE206C8100006B1A11 /* ViewController.h */,
@@ -70,6 +77,17 @@
 			);
 			path = AnimationButton;
 			sourceTree = "<group>";
+		};
+		1351C5E1206C8137006B1A11 /* LongPressButton */ = {
+			isa = PBXGroup;
+			children = (
+				1351C5E5206C817B006B1A11 /* LongPressProgressView.h */,
+				1351C5E6206C817B006B1A11 /* LongPressProgressView.m */,
+				1351C5E3206C8146006B1A11 /* RoundAnimationButton.h */,
+				1351C5E2206C8145006B1A11 /* RoundAnimationButton.m */,
+			);
+			path = LongPressButton;
+			sourceTree = SOURCE_ROOT;
 		};
 /* End PBXGroup section */
 
@@ -143,8 +161,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1351C5D0206C8100006B1A11 /* ViewController.m in Sources */,
+				1351C5E4206C8146006B1A11 /* RoundAnimationButton.m in Sources */,
 				1351C5DB206C8100006B1A11 /* main.m in Sources */,
 				1351C5CD206C8100006B1A11 /* AppDelegate.m in Sources */,
+				1351C5E7206C817B006B1A11 /* LongPressProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +300,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnimationButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghx.AnimationButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -293,6 +314,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = AnimationButton/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ghx.AnimationButton;
 				PRODUCT_NAME = "$(TARGET_NAME)";
